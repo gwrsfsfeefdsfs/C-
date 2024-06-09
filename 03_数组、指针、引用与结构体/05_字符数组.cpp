@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    "hello";    // 底层是char数组
+    "hello";            // 底层是char数组
     char v[] = "hello"; // 底层是char数组
     cout << v[0] << endl;
     cout << v[1] << endl;
