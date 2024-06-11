@@ -24,12 +24,12 @@ int main(){
     int v1[] = {1,2,3,4,5};
 
     int i1 = 0;
-    while(i1 < sizeof(v1)/sizeof(v1[0])){
+    while(i1 < sizeof(v1) / sizeof(v1[0])){
         cout << v1[i1] << endl;
         i1++;
     }
 
-    for (int i2 = 0; i2 < sizeof(v1)/sizeof(v1[0]); i2++) {
+    for (int i2 = 0; i2 < sizeof(v1) / sizeof(v1[0]); i2++) {
         cout << v1[i2] << endl;
     }
 
@@ -46,6 +46,7 @@ int main(){
     }
 
     cout << "----------------------------------------------------" << endl;
+
     int max_num = 0;
     int min_num = 101;
     int arr[10];
