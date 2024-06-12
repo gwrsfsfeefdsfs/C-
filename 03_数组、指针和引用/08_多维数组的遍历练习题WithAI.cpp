@@ -38,7 +38,7 @@ int main(){
     for (int x =0; x < sizeof(assignment) / sizeof(assignment[0]); x++) {
         for (int y = 0; y < sizeof(assignment[x]) / sizeof(assignment[0][0]); y++) {
             for (int z = 0; z < sizeof(assignment[x][y]) / sizeof(assignment[0][0][0]); z++) {
-                assignment[x][y][z] = names[getRandom(0, sizeof(names) / sizeof(names[0]) - 1)];
+                assignment[x][y][z] = names[getRandom(0, 50)];
                 cout << "专业:" << majors[x] << "\t班级:" << classes[y] << "\t座位号:" << seats[z] << "\t学生:" << assignment[x][y][z] << endl;
             }
         }
