@@ -8,15 +8,12 @@ int main(){
     int *pArr = new int[10] {3,5,1,11,99,66,22,2,8,6};
     int *NewArr = new int[8];
 
-    for(int i = 0; i < 10; i++) {
-        if (i == 0) {
+    for(int i = 0, j = 0; j < 10; j++) {
+        if (j == 0 || j == 5) {
             continue;
-        } else if (i == 5) {
-            continue;
-        } else if (i < 5 && i > 0) {
-            NewArr[i - 1] = pArr[i];
-        } else {
-            NewArr[i - 2] = pArr[i];
+        }  else {
+            NewArr[i] = pArr[j];
+            i++;
         }
     }
 
