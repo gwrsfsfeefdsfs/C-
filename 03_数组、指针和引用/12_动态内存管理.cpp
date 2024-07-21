@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     //new 运算符 语法
     //new type      申请普通变量空间
     //new type[n]   申请数组空间
@@ -20,8 +20,8 @@ int main(){
 
     int x = 5;
     int *p2 = new int[x];
-    p2[0] = 1;  //指针也可用下标，等同于 *(p2+0)
-    p2[1] = 2;  //指针也可用下标，等同于 *(p2+1)
+    p2[0] = 1;//指针也可用下标，等同于 *(p2+0)
+    p2[1] = 2;//指针也可用下标，等同于 *(p2+1)
     p2[2] = 3;
     p2[3] = 4;
     p2[4] = 5;
@@ -34,14 +34,14 @@ int main(){
     }
 
     cout << p2[0] << endl;
-    cout << *(p2+1) << endl;
+    cout << *(p2 + 1) << endl;
     delete[] p2;
 
 
     //不可删除静态内存
-//    int num = 10;
-//    cout << num << endl;
-//    delete &num;
+    //    int num = 10;
+    //    cout << num << endl;
+    //    delete &num;
     cout << "-----------------------------------------" << endl;
 
     int size = 0;
@@ -53,7 +53,6 @@ int main(){
         cout << "p3[" << i << "] = " << p3[i] << endl;
     }
     delete[] p3;
-
 
     return 0;
 }
