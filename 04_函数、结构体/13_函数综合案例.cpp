@@ -58,8 +58,10 @@ int menu(account *p) {
          << "4.退出\n"
          << endl
          << "请选择(输入序列号)：";
+
     int choice;
     cin >> choice;
+
     switch (choice) {
         case 1:
             cout << "请输入密码：";
@@ -93,6 +95,7 @@ int menu(account *p) {
             return 0;
     }
 }
+
 int main() {
     account accounts[5] = {
             {"M", 1000000000.0},
@@ -100,9 +103,10 @@ int main() {
             {"B", 10006.1},
             {"R", 96523.0},
             {"C", 1500.9}};
-    account *p = accounts;
-    menu(p);
 
+    account *p = accounts;
+
+    menu(p);
 
     return 0;
 }
