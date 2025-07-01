@@ -5,11 +5,11 @@
 #include <windows.h>
 using namespace std;
 
-int main(){
+int main() {
     SetConsoleOutputCP(CP_UTF8);
     //C语言风格字符串
-    char s1[] = "itheima";  //字符数组的形式
-    char *s2 = "itcast";    //指针形式的字符串
+    char s1[] = "itheima";//字符数组的形式
+    char *s2 = "itcast";  //指针形式的字符串
 
     //C++语言风格字符串
     string s3 = "C++ string";
